@@ -41,4 +41,9 @@ user_one.addresses << addr_one
 
 puts "\n*** user_user address count: #{user_one.addresses.count}\n\n"
 
+addr_two = Address.create street: '2 Main St', city: 'New York', state: 'NY', zip: '90210'
+user_one.addresses << addr_two
+
+puts "\n*** user_user address count: #{user_one.addresses.count}\n\n"
+
 puts "\n*** user_user first address: #{user_one.addresses.first.inspect}\n\n"
